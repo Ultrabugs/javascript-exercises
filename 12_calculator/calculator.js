@@ -30,18 +30,22 @@ const factorial = function(a) {
     return 1;
   }
 
-  let factorialArray = [];
-  for(let x = 0; x < a; x++) {
-    factorialArray.push(x);
+  let newArray = [];
+  for(a ; a >= 1; a--) {
+      newArray.push(a);
   }
-
-  let result = factorialArray.reduce((accumulator, value) => {
-    return accumulator * value;
+  
+  console.log(newArray);
+  
+  let result = newArray.reduce((accumulator, value) => {
+      return accumulator * value;
   });
-
+  
   return result;
 	
 };
+
+
 
 // Do not edit below this line
 module.exports = {
